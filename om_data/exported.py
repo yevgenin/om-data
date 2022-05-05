@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 
 import numpy
+from numpy import ndarray
 
 
 @dataclass(frozen=True)
