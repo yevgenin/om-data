@@ -36,9 +36,9 @@ class ImageMetadataExported:
 @dataclass(frozen=True)
 class ImageSegmentExported:
     image_segment_uuid: int
-    profile_image_seq: numpy.ndarray
-    profile_coords_map: numpy.ndarray
-    profile_curve_coords: numpy.ndarray
+    profile_image_seq: ndarray
+    profile_coords_map: ndarray
+    profile_curve_coords: ndarray
 
 
 @dataclass(frozen=True)
@@ -51,9 +51,9 @@ class SegmentedImageExported:
 class ProcessedImageExported:
     processed_image_uuid: int
 
-    captured_image_seq: numpy.ndarray
-    captured_image_seq_intensity_corrected: numpy.ndarray
-    intensity_correction_map: numpy.ndarray
+    captured_image_seq: ndarray
+    captured_image_seq_intensity_corrected: ndarray
+    intensity_correction_map: ndarray
 
     segmented_image: SegmentedImageExported
 
@@ -68,7 +68,7 @@ class GenomeSeqLabeledExported:
     genome_seq_bytes_hash: int
     genome_seq_metadata: dict
     is_circular: bool
-    labeled_mask: numpy.ndarray
+    labeled_mask: ndarray
     labeled_mask_hash: int = None
 
 
