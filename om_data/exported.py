@@ -22,6 +22,7 @@ class DatasetMetadataExported:
     organism: OrganismExported
     seq_labeled: SeqLabeledExported
     scan_set_metadata: dict
+    min_curve_len_pixels: float
 
 
 @dataclass(frozen=True)
